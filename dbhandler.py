@@ -96,7 +96,7 @@ class DBHandler():
                         "Satelite"      : data['sat'],
                         "timestamp"     : data['time'],
                         "Corrente"      : data['cur'], 
-                        "Temperatura"   : data['tmep'], 
+                        "Temperatura"   : data['temp'], 
                         "Pressao"       : data['press'],
                         "Altitude"      : data['alt'],
                         "Latitude"      : data['lat'],
