@@ -590,7 +590,7 @@
             keep_ratio: True
             size_hint: .10, .1
             pos_hint: {'top': 1, 'left': 1}
-            source: 'imgs/logo_supernova_branca.png'
+            source: 'imgs/new_logo.png'
         Button:
             id: imagem_conexao
             background_normal: 'imgs/desconectado.png'
@@ -611,7 +611,7 @@
             pos_hint: {'top': 1, 'x': .2 }
             Label:
                 id: supervisorio
-                text: 'SUPERVISÓRIO SUPERNOVA ROCKETRY'
+                text: 'MACH ONE SUPERVISORY'
                 #size_font: 32
                 bold: True
                 text_size: self.size
@@ -622,7 +622,7 @@
                 orientation: 'vertical'
                 Label:
                     id: eletronica
-                    text: 'NÚCLEO DE SATELITES'
+                    text: 'SATELLITE DIVISION'
                     bold: True
                     text_size: self.size
                     valign: 'center'
@@ -816,7 +816,7 @@
             pos_hint: {'x': .02, 'y': .14} 
             size_hint: (.07, .03)
             Label:
-                text: 'RSSI'
+                text: 'Current'
                 text_size: self.size
                 valign: 'center'
                 halign: 'left'
@@ -830,7 +830,7 @@
             pos_hint: {'x': .1, 'y': .14} 
             size_hint: (.07, .03)
             Label:
-                text: 'Corrente'
+                text: 'Pressure'
                 text_size: self.size
                 valign: 'center'
                 halign: 'left'
@@ -844,11 +844,11 @@
             pos_hint: {'x': .18, 'y': .14} 
             size_hint: (.07, .03)
             Label:
-                text: 'Potência'
+                text: 'Temperature'
                 text_size: self.size
                 valign: 'center'
                 halign: 'left'
-                font_size: self.parent.width/5.6
+                font_size: self.parent.width/6.5
                 font_name: 'fontes/montserrat/Montserrat-Regular.ttf'
                 color: 0, 0, 0, 1
         
@@ -858,7 +858,7 @@
             pos_hint: {'x': .02, 'y': .31} 
             size_hint: (.14, .03)
             Label:
-                text: 'Giroscópio'
+                text: 'Gyroscope'
                 text_size: self.size
                 valign: 'center'
                 halign: 'left'
@@ -912,7 +912,7 @@
             pos_hint: {'x': .02, 'y': .48} 
             size_hint: (.14, .03)
             Label:
-                text: 'Acelerômetro'
+                text: 'Accelerometer'
                 text_size: self.size
                 valign: 'center'
                 halign: 'left'
@@ -1010,7 +1010,7 @@
             pos_hint: {'x': .1, 'y': .78} 
             size_hint: (.07, .03)
             Label:
-                text: 'O3'
+                text: 'CO'
                 text_size: self.size
                 valign: 'center'
                 halign: 'left'
@@ -1040,7 +1040,7 @@
             pos_hint: {'x': .01, 'y': .82} 
             size_hint: (.25, .06)
             Label:
-                text: 'Dados Recebidos'
+                text: 'Data Received'
                 font_name: 'fontes/montserrat/Montserrat-SemiBold.ttf'
                 text_size: self.size
                 valign: 'center'
@@ -1058,7 +1058,7 @@
             BoxLayout:
                 orientation: 'vertical'
                 Label:
-                    text: 'Paraquedas Estabilizador'
+                    text: 'Drogue Parachute'
                     color: 0, 0, 0, 1
                     bold: True
                     font_size: self.parent.width/20
@@ -1069,7 +1069,7 @@
                     BoxLayout:
                         orientation:'vertical'
                         Label:
-                            text: 'Principal'
+                            text: 'Main'
                             valign: 'top'
                             font_size: self.parent.width/8
                             font_name: 'fontes/montserrat/Montserrat-Regular.ttf'
@@ -1080,7 +1080,7 @@
                     BoxLayout:
                         orientation:'vertical'
                         Label:
-                            text: 'Redundante'
+                            text: 'Redundant'
                             valign: 'top'
                             font_size: self.parent.width/8
                             font_name: 'fontes/montserrat/Montserrat-Regular.ttf'
@@ -1091,7 +1091,7 @@
                     BoxLayout:
                         orientation:'vertical'
                         Label:
-                            text: 'Comercial'
+                            text: 'Commercial'
                             valign: 'top'
                             font_size: self.parent.width/8
                             font_name: 'fontes/montserrat/Montserrat-Regular.ttf'
@@ -1102,7 +1102,7 @@
             BoxLayout:
                 orientation:'vertical'      
                 Label:
-                    text: 'Paraquedas Principal'
+                    text: 'Main Parachute'
                     bold: True
                     font_size: self.parent.width/20
                     font_name: 'fontes/montserrat/Montserrat-SemiBold.ttf'
@@ -1112,7 +1112,7 @@
                     BoxLayout:
                         orientation:'vertical'
                         Label:
-                            text: 'Principal'
+                            text: 'Main'
                             valign: 'top'
                             font_size: self.parent.width/12
                             font_name: 'fontes/montserrat/Montserrat-Regular.ttf'
@@ -1123,7 +1123,7 @@
                     BoxLayout:
                         orientation:'vertical'
                         Label:
-                            text: 'Comercial'
+                            text: 'Commercial'
                             valign: 'top'
                             font_size: self.parent.width/12
                             font_name: 'fontes/montserrat/Montserrat-Regular.ttf'
@@ -1190,7 +1190,7 @@
             BoxLayout:
                 orientation: 'vertical'
                 Label:
-                    text: 'Banco de Dados'
+                    text: 'Database'
                     color: 0, 0, 0, 1
                     bold: True
                     font_size: self.parent.width/20
@@ -1248,7 +1248,7 @@
             size_hint: .06, .03
             pos_hint: {'x': .325, 'y': .685}
             Label:
-                text: 'Giroscópio'
+                text: 'Gyroscope'
                 bold: True
                 text_size: self.size
                 valign: 'bottom'
@@ -1262,7 +1262,7 @@
             size_hint: .12, .03
             pos_hint: {'x': .325, 'y': .405}
             Label:
-                text: 'Posição do foguete'
+                text: 'Location'
                 bold: True
                 text_size: self.size
                 valign: 'bottom'
@@ -1276,7 +1276,7 @@
             size_hint: .03, .03
             pos_hint: {'x': .2815 , 'y':.685}
             Label:
-                text: 'SoC'
+                text: 'Altitude'
                 bold: True
                 text_size: self.size
                 valign: 'bottom'
@@ -1290,7 +1290,7 @@
             size_hint: .06, .03
             pos_hint: {'x': .685 , 'y':.405}
             Label:
-                text: 'SoC'
+                text: 'Trajectory'
                 bold: True
                 text_size: self.size
                 valign: 'bottom'
@@ -1304,7 +1304,7 @@
             size_hint: .06, .03
             pos_hint: {'x': .685 , 'y':.685}
             Label:
-                text: 'Acelerômetro'
+                text: 'Accelerometer'
                 bold: True
                 text_size: self.size
                 valign: 'bottom'
@@ -1325,8 +1325,8 @@
             pos_hint: {'x': .68, 'y': 0.05}
             TimeSeriesGraph:
                 id: graphAltitude
-                xlabel: 'Tempo (s)'
-                ylabel: 'State of Charge (%)'
+                xlabel: 'Time (s)'
+                ylabel: 'Altitude (m)'
                 bakground_color: 1, 1, 1
                 x_ticks_minor: 5
                 x_ticks_major: 200
@@ -1350,8 +1350,8 @@
             pos_hint: {'x': .68, 'y': 0.44}
             TimeSeriesGraph:
                 id: graphAcelerometro
-                xlabel: 'Tempo (s)'
-                ylabel: 'Aceleração (m/s)'
+                xlabel: 'Time (s)'
+                ylabel: 'Acceleration (m/s)'
                 bakground_color: 1, 1, 1
                 x_ticks_minor: 5
                 x_ticks_major: 200
@@ -1375,8 +1375,8 @@
             pos_hint: {'x': .32, 'y': 0.44}
             TimeSeriesGraph:
                 id: graphGiroscopio
-                xlabel: 'Tempo (s)'
-                ylabel: 'Angulação (Graus)'
+                xlabel: 'Time (s)'
+                ylabel: 'Attitude (°)'
                 bakground_color: 1, 1, 1
                 x_ticks_minor: 5
                 x_ticks_major: 200
@@ -1419,7 +1419,7 @@
         size_hint: .07, 0.09
         pos_hint: {'x' : .1, 'y' : 0.68}
         Label:
-            id: O3
+            id: CO
             text: '-.-'
             text_size: self.size
             font_size: self.parent.width/2.6
@@ -1561,7 +1561,7 @@
         size_hint: .07, 0.09
         pos_hint: {'x' : .02, 'y' : 0.04}
         Label:
-            id: RSSI
+            id: corrente
             text: '-.-'
             text_size: self.size
             font_size: altitude.font_size
@@ -1575,7 +1575,7 @@
         size_hint: .07, 0.09
         pos_hint: {'x' : .1, 'y' : 0.04}
         Label:
-            id: Corrente
+            id: pressao
             text: '-.-'
             text_size: self.size
             font_size: altitude.font_size
@@ -1589,7 +1589,7 @@
         size_hint: .07, 0.09
         pos_hint: {'x' : .18, 'y' : 0.04}
         Label:
-            id: Potencia
+            id: temperatura
             text: '-.-'
             text_size: self.size
             font_size: altitude.font_size

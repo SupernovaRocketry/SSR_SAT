@@ -13,25 +13,22 @@ class DBHandler():
         """
         self._dbpath = 'db\\scada.db'
         self._tablename = tablename
-        self._col_names = ["Sat", 
-                        "Corrente", 
-                        "Potencia", 
-                        "Temperatura",
-                        "Pressao",
-                        "Altitude",
-                        "Latitude",
-                        "Longitude",
-                        "Acelerometro X",
-                        "Acelerometro Y",
-                        "Acelerometro Z",
-                        "Giroscopio X",
-                        "Giroscopio Y",
-                        "Giroscopio Z",
-                        "O3",
-                        "CO2",
-                        "DoD",
-                        "SoC",
-                        "RSSI"
+        self._col_names = ["Satelite",   
+                            "timestamp",  
+                            "Corrente",   
+                            "Temperatura",
+                            "Pressao",    
+                            "Altitude",   
+                            "Latitude",   
+                            "Longitude", 
+                            "aX",         
+                            "aY",         
+                            "aZ",         
+                            "gX",         
+                            "gY",         
+                            "gZ",         
+                            "CO",         
+                            "CO2"        
         ]
         
 
@@ -95,25 +92,23 @@ class DBHandler():
         Método 
         """
         try:
-            newData = {"timestamp" : data['timestamp'],
-                        "Corrente" : data['Cur'], 
-                        "Potencia" : data['Pot'], 
-                        "Temperatura" : data['Temp'], 
-                        "Pressao" : data['Press'],
-                        "Altitude" : data['Alt'],
-                        "Latitude" : data['Lat'],
-                        "Longitude" : data['Lon'],
-                        "aX" : data['aX'],
-                        "aY" : data['aY'],
-                        "aZ" : data['aZ'],
-                        "gX" : data['gX'],
-                        "gY"   : data['gY'],
-                        "gZ"  : data['gZ'],
-                        "O3"    : data['O3'],
-                        "CO2" : data['CO2'],
-                        "DoD"   :   data["DoD"],
-                        "SoC"   :   data["SoC"],
-                        "RSSI"  :   data["RSSI"]}
+            newData = {
+                        "Satelite"      : data['sat'],
+                        "timestamp"     : data['time'],
+                        "Corrente"      : data['cur'], 
+                        "Temperatura"   : data['tmep'], 
+                        "Pressao"       : data['press'],
+                        "Altitude"      : data['alt'],
+                        "Latitude"      : data['lat'],
+                        "Longitude"     : data['long'],
+                        "aX"            : data['aX'],
+                        "aY"            : data['aY'],
+                        "aZ"            : data['aZ'],
+                        "gX"            : data['gX'],
+                        "gY"            : data['gY'],
+                        "gZ"            : data['gZ'],
+                        "CO"            : data['co'],
+                        "CO2"           : data['co2'],}
         
             return newData
         except Exception as e:

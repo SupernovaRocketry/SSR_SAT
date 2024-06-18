@@ -142,33 +142,33 @@ class MainWidget(FloatLayout):
         Método para a atualização dos da interface gráfica
         """
         if self._instDados['Sat'] == "Embauba":
-            self.ids.altitude.text = str("{:.1f}".format(self._instDados['Alt']))
-            # self.ids.O3.text = str("{:.2f}".format(self._instDados['O3']))
-            # self.ids.CO2.text = str("{:.2f}".format(self._instDados['CO2']))
-            self.ids.latitude.text = str("{:.15f}".format(self._instDados['Lat']))
-            self.ids.longitude.text = str("{:.15f}".format(self._instDados['Lon']))
+            self.ids.altitude.text = str("{:.1f}".format(self._instDados['alt']))
+            self.ids.CO.text = str("{:.2f}".format(self._instDados['co']))
+            self.ids.CO2.text = str("{:.2f}".format(self._instDados['co2']))
+            self.ids.latitude.text = str("{:.15f}".format(self._instDados['lat']))
+            self.ids.longitude.text = str("{:.15f}".format(self._instDados['long']))
             self.ids.acelerometroX.text = str("{:.2f}".format(self._instDados['aX']))
             self.ids.acelerometroY.text = str("{:.2f}".format(self._instDados['aY']))
             self.ids.acelerometroZ.text = str("{:.1f}".format(self._instDados['aZ']))
             self.ids.giroscopioX.text = str(int(self._instDados['gX']))
             self.ids.giroscopioY.text = str(int(self._instDados['gY']))
             self.ids.giroscopioZ.text = str(int(self._instDados['gZ']))
-            self.ids.RSSI.text = str(self._instDados['RSSI'])
-            self.ids.Corrente.text = str("{:.3f}".format(self._instDados['Cur']))
-            self.ids.Potencia.text = str("{:.1f}".format(self._instDados['Pot']))
-            self.ids.mapa.lat = self._instDados['Lat']
-            self.ids.mapa.lon = self._instDados['Lon']
-            self.ids.mapaMarker.lat = self._instDados['Lat']
-            self.ids.mapaMarker.lon = self._instDados['Lon']
+            self.ids.corrente.text = str(self._instDados['cur'])
+            self.ids.pressao.text = str("{:.3f}".format(self._instDados['press']))
+            self.ids.temperatura.text = str("{:.1f}".format(self._instDados['temp']))
+            self.ids.mapa.lat = self._instDados['lat']
+            self.ids.mapa.lon = self._instDados['long']
+            self.ids.mapaMarker.lat = self._instDados['lat']
+            self.ids.mapaMarker.lon = self._instDados['long']
             self.ids.mapa.do_update(1)
             # self.updateBoolean()
                                                     
             # Atualiza o grafico vertical de altitude
-            self.ids.graficoMedidorAltitude.size_hint = (self.ids.medidorAltitude.size_hint[0], float(self._instDados['SoC']/(100))*self.ids.medidorAltitude.size_hint[1]) if self._instDados['SoC'] <= 100 else (self.ids.medidorAltitude.size_hint[0], self.ids.medidorAltitude.size_hint[1])
+            self.ids.graficoMedidorAltitude.size_hint = (self.ids.medidorAltitude.size_hint[0], float(self._instDados['alt']/(100))*self.ids.medidorAltitude.size_hint[1]) if self._instDados['alt'] <= 100 else (self.ids.medidorAltitude.size_hint[0], self.ids.medidorAltitude.size_hint[1])
             # self.ids.linhaGraficoMedidorAltitude.pos = (self.ids.medidorAltitude.pos[0], self.ids.medidorAltitude.pos[1] + float(self._instDados['Altitude']/36)*self.ids.medidorAltitude.size_hint[1])
 
             #Atualiza o grafico de linhas de altitude
-            self.ids.graphAltitude.updateGraph((self._instDados['timestamp'], self._instDados['SoC']),0)
+            self.ids.graphAltitude.updateGraph((self._instDados['timestamp'], self._instDados['alt']),0)
 
             # Atualiza o grafico com dados do acelerometro
             self.ids.graphAcelerometro.updateGraph((self._instDados['timestamp'], self._instDados['aX']), 0)
