@@ -321,9 +321,9 @@ class MainWidget(FloatLayout):
         """
         Método que cria um novo MapMarkerPopup para marcar a base de lançamento e desabilita o botão
         """
-        marker = MapMarkerPopup(lat=self._instDados['lat'], lon=self._instDados['lon'], source='imgs/markerBase.png')
+        marker = MapMarkerPopup(lat=self._instDados['lat'], lon=self._instDados['long'], source='imgs/markerBase.png')
         self.ids.mapa.add_widget(marker)
-        self.ids.mapa.center_on(self._instDados['lat'], self._instDados['lon'])
+        self.ids.mapa.center_on(self._instDados['lat'], self._instDados['long'])
         self.ids.bttnMarkBase.disabled = True
 
 
