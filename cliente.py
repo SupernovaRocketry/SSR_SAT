@@ -85,9 +85,9 @@ class UART():
             self._data = json.loads(self._data)
             self._data['timestamp'] = datetime.now()
             if self._firstData == True:
-                self._minAltValue = self._data['Alt']
+                self._minAltValue = self._data['alt']
                 self._firstData = False
-            self._data['Alt'] = self._data['Alt'] - self._minAltValue
+            self._data['alt'] = self._data['alt'] - self._minAltValue
             return self._data
         except Exception as e:
             print(e)

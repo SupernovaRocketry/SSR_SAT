@@ -149,7 +149,7 @@ class MainWidget(FloatLayout):
             self.ids.longitude.text = str("{:.15f}".format(self._instDados['long']))
             self.ids.acelerometroX.text = str("{:.2f}".format(self._instDados['aX']))
             self.ids.acelerometroY.text = str("{:.2f}".format(self._instDados['aY']))
-            self.ids.acelerometroZ.text = str("{:.1f}".format(self._instDados['aZ']))
+            self.ids.acelerometroZ.text = str("{:.2f}".format(self._instDados['aZ']))
             self.ids.giroscopioX.text = str(int(self._instDados['gX']))
             self.ids.giroscopioY.text = str(int(self._instDados['gY']))
             self.ids.giroscopioZ.text = str(int(self._instDados['gZ']))
