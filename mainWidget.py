@@ -141,7 +141,7 @@ class MainWidget(FloatLayout):
         """
         Método para a atualização dos da interface gráfica
         """
-        if self._instDados['Sat'] == "Embauba":
+        if self._instDados['sat'] == "Embauba":
             self.ids.altitude.text = str("{:.1f}".format(self._instDados['alt']))
             self.ids.CO.text = str("{:.2f}".format(self._instDados['co']))
             self.ids.CO2.text = str("{:.2f}".format(self._instDados['co2']))
