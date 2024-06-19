@@ -153,7 +153,7 @@ class MainWidget(FloatLayout):
             self.ids.giroscopioX.text = str(int(self._instDados['gX']))
             self.ids.giroscopioY.text = str(int(self._instDados['gY']))
             self.ids.giroscopioZ.text = str(int(self._instDados['gZ']))
-            self.ids.corrente.text = str(self._instDados['cur'])
+            self.ids.voltage.text = str(self._instDados['volt'])
             self.ids.pressao.text = str("{:.3f}".format(self._instDados['press']))
             self.ids.temperatura.text = str("{:.1f}".format(self._instDados['temp']))
             self.ids.mapa.lat = self._instDados['lat']

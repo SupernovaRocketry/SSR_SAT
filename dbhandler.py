@@ -15,7 +15,7 @@ class DBHandler():
         self._tablename = tablename
         self._col_names = ["Satelite",   
                             "timestamp",  
-                            "Corrente",   
+                            "Tensao",   
                             "Temperatura",
                             "Pressao",    
                             "Altitude",   
@@ -95,7 +95,7 @@ class DBHandler():
             newData = {
                         "Satelite"      : data['sat'],
                         "timestamp"     : data['time'],
-                        "Corrente"      : data['cur'], 
+                        "Tensao"        : data['volt'], 
                         "Temperatura"   : data['tmep'], 
                         "Pressao"       : data['press'],
                         "Altitude"      : data['alt'],
