@@ -13,22 +13,23 @@ class DBHandler():
         """
         self._dbpath = 'db\\scada.db'
         self._tablename = tablename
-        self._col_names = ["Satelite",   
-                            "Tempo",  
-                            "Tensao",   
-                            "Temperatura",
-                            "Pressao",    
-                            "Altitude",   
+        self._col_names = ["Satelite",    
+                            "Tempo",       
+                            "Tensao",      
+                            "Temperatura", 
+                            "Pressao",     
+                            "Altitude",    
                             "Latitude",   
-                            "Longitude", 
-                            "aX",         
-                            "aY",         
-                            "aZ",         
-                            "gX",         
-                            "gY",         
-                            "gZ",         
-                            "CO",         
-                            "CO2"        
+                            "Longitude",   
+                            "aX",          
+                            "aY",          
+                            "aZ",          
+                            "gX",          
+                            "gY",          
+                            "gZ",          
+                            "CO",          
+                            "CO2",         
+                            "RSSI"                            
         ]
         
 
@@ -108,7 +109,8 @@ class DBHandler():
                         "gY"            : data['gY'],
                         "gZ"            : data['gZ'],
                         "CO"            : data['co'],
-                        "CO2"           : data['co2'],}
+                        "CO2"           : data['co2'],
+                        "RSSI"          : data['RSSI']}
         
             return newData
         except Exception as e:
