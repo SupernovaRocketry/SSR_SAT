@@ -14,7 +14,7 @@ class DBHandler():
         self._dbpath = 'db\\scada.db'
         self._tablename = tablename
         self._col_names = ["Satelite",   
-                            "timestamp",  
+                            "Tempo",  
                             "Tensao",   
                             "Temperatura",
                             "Pressao",    
@@ -94,7 +94,7 @@ class DBHandler():
         try:
             newData = {
                         "Satelite"      : data['sat'],
-                        "time"     : data['time'],
+                        "Tempo"         : data['time'],
                         "Tensao"        : data['volt'], 
                         "Temperatura"   : data['temp'], 
                         "Pressao"       : data['press'],
