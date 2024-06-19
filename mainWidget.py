@@ -144,7 +144,7 @@ class MainWidget(FloatLayout):
         if self._instDados['sat'] == "Embauba":
             self.ids.altitude.text = str("{:.1f}".format(self._instDados['alt']))
             self.ids.CO.text = str("{:.2f}".format(self._instDados['co']))
-            self.ids.CO2.text = str("{:.2f}".format(self._instDados['co2']))
+            self.ids.CO2.text = str("{:.1f}".format(self._instDados['co2']))
             self.ids.latitude.text = str("{:.15f}".format(self._instDados['lat']))
             self.ids.longitude.text = str("{:.15f}".format(self._instDados['long']))
             self.ids.acelerometroX.text = str("{:.2f}".format(self._instDados['aX']))
@@ -154,7 +154,7 @@ class MainWidget(FloatLayout):
             self.ids.giroscopioY.text = str(int(self._instDados['gY']))
             self.ids.giroscopioZ.text = str(int(self._instDados['gZ']))
             self.ids.voltage.text = str(self._instDados['volt'])
-            self.ids.pressao.text = str("{:.3f}".format(self._instDados['press']))
+            self.ids.pressao.text = str("{:.1f}".format(self._instDados['press']))
             self.ids.temperatura.text = str("{:.1f}".format(self._instDados['temp']))
             self.ids.mapa.lat = self._instDados['lat']
             self.ids.mapa.lon = self._instDados['long']

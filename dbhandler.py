@@ -13,7 +13,7 @@ class DBHandler():
         """
         self._dbpath = 'db\\scada.db'
         self._tablename = tablename
-        self._col_names = [ "timestamp",       
+        self._col_names = [  
                             "Tensao",      
                             "Temperatura", 
                             "Pressao",     
