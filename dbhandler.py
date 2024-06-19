@@ -94,7 +94,7 @@ class DBHandler():
         try:
             newData = {
                         "Satelite"      : data['sat'],
-                        "timestamp"     : data['time'],
+                        "time"     : data['time'],
                         "Tensao"        : data['volt'], 
                         "Temperatura"   : data['temp'], 
                         "Pressao"       : data['press'],
